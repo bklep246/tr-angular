@@ -1,9 +1,11 @@
 ﻿'use strict';
 
 var yeoman = require('yeoman-generator');
+var chalk = require('chalk');
+var yosay = require('yosay');
 var pkg = require('../../package.json');
 
-module.exports = generators.Base.extend({
+var trAngularGenerator = yeoman.generators.Base.extend({
 
     constructor: function () {
         yeoman.generators.Base.apply(this, arguments);
@@ -15,13 +17,13 @@ module.exports = generators.Base.extend({
         });
 
         this.version = pkg.version;
+        this.appPath = 'src';
 
-    },
-    method1: function () {
-        console.log('method 1 just ran');
-    },
-    method2: function () {
-        console.log('method 2 just ran');
+        //console.log('version:' + this.version);
+        this.log('version:' + this.version);
     }
-
 });
+
+require('./src/prompts')(trAngularGenerator);
+
+module.exports = trAngularGenerator;
