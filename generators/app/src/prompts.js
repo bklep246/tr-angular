@@ -36,8 +36,13 @@ module.exports = function (trAngularGenerator) {
         }.bind(this));
     };
 
-    //trAngularGenerator.prototype.askForModules = function askForModules() {
-    //    var done = this.async();
+    trAngularGenerator.prototype.advancedQuestions = function advancedQuestions() {
+        this.includeModernizr = true;
+        this.imageMin = false;
+        this.qrCode = false;
+    };
+        
+        //    var done = this.async();
 
     //    var prompts = [{
     //        type: 'checkbox',

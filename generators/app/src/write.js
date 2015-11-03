@@ -15,53 +15,68 @@ module.exports = function (trAngularGenerator) {
 
 
     trAngularGenerator.prototype.writeGulpFile = function writeGulpFile() {
-        this.fs.copy(
-            this.templatePath('gulpfile.js'),
-            this.destinationPath('gulpfile.js')
-            );
+        //this.fs.copy(
+        //    this.templatePath('gulpfile.js'),
+        //    this.destinationPath('gulpfile.js')
+        //    );
 
-        this.fs.copy(
-            this.templatePath('gulp/watch.js'),
-            this.destinationPath('gulp/_watch.js')
-            );
+        //this.fs.copy(
+        //    this.templatePath('gulp/watch.js'),
+        //    this.destinationPath('gulp/_watch.js')
+        //    );
 
-        this.fs.copyTpl(
-            this.templatePath('_package.json'),
-            this.destinationPath('package.json'), this
-            );
+        //this.fs.copyTpl(
+        //    this.templatePath('_package.json'),
+        //    this.destinationPath('package.json'), this
+        //    );
 
-        //this.files = [];
-        //this.files.push({
-        //    src: 'src/app/styles/index.scss',
-        //    dest: 'src/app/styles/index.scss',
-        //    template: false
-        //});
+        //this.fs.copy(
+        //   this.templatePath('src/index.html'),
+        //   this.destinationPath('src/index.html')
+        //   );
 
-        //this.files.push({
-        //    src: 'src/app/styles/vendor.scss',
-        //    dest: 'src/app/styles/vendor.scss',
-        //    template: false
-        //});
+        //this.fs.copy(
+        //    this.templatePath('src/app/styles/index.scss'),
+        //    this.destinationPath('src/app/styles/index.scss')
+        //    );
 
-        //this.files.push({
-        //    src: 'src/app/styles/_helper.scss',
-        //    dest: 'src/app/styles/_helper.scss',
-        //    template: false
-        //});
+        //this.fs.copy(
+        //    this.templatePath('src/app/styles/vendor.scss'),
+        //    this.destinationPath('src/app/styles/vendor.scss')
+        //    );
 
-        //this.files.push({
-        //    src: 'src/app/styles/_utils.scss',
-        //    dest: 'src/app/styles/_utils.scss',
-        //    template: false
-        //});
-        //this.files = [];
-        //this.files.push({
-        //    src: 'gulpfile.js',
-        //    dest: 'gulpfile.js',
-        //    template: false
-        //});
+        //this.fs.copy(
+        //    this.templatePath('src/app/styles/_helper.scss'),
+        //    this.destinationPath('src/app/styles/_helper.scss')
+        //    );
 
+        //this.fs.copy(
+        //    this.templatePath('src/app/styles/_utils.scss'),
+        //    this.destinationPath('src/app/styles/_utils.scss')
+        //    );
+        
+
+        //this.files.forEach(function (file) {
+        //    var dest = utils.replacePrefix(file.dest, this.props.paths);
+        //    try {
+        //        if (file.template) {
+        //            this.fs.copyTpl(this.templatePath(file.src), this.destinationPath(dest), this);
+        //        } else {
+        //            this.fs.copy(this.templatePath(file.src), this.destinationPath(dest));
+        //        }
+        //    } catch (error) {
+        //        console.error('Template processing error on file', file.src); // eslint-disable-line no-console
+        //        throw error;
+        //    }
+        //}, this);
+    };
+
+    /**
+     * Pass through each files and actually copy them
+     */
+    trAngularGenerator.prototype.writeFiles = function writeFiles() {
         this.files.forEach(function (file) {
+            this.log(this.props);
             var dest = utils.replacePrefix(file.dest, this.props.paths);
             try {
                 if (file.template) {
@@ -75,25 +90,6 @@ module.exports = function (trAngularGenerator) {
             }
         }, this);
     };
-
-    /**
-     * Pass through each files and actually copy them
-     */
-    //GulpAngularGenerator.prototype.writeFiles = function writeFiles() {
-    //    this.files.forEach(function (file) {
-    //        var dest = utils.replacePrefix(file.dest, this.props.paths);
-    //        try {
-    //            if (file.template) {
-    //                this.fs.copyTpl(this.templatePath(file.src), this.destinationPath(dest), this);
-    //            } else {
-    //                this.fs.copy(this.templatePath(file.src), this.destinationPath(dest));
-    //            }
-    //        } catch (error) {
-    //            console.error('Template processing error on file', file.src); // eslint-disable-line no-console
-    //            throw error;
-    //        }
-    //    }, this);
-    //};
 
     /**
      * Launch npm and bower installs unless they are skipped

@@ -1,30 +1,39 @@
 ﻿{
-  "staticFiles": [
-    ".bowerrc",
-    ".editorconfig",
+    "staticFiles": [
+        ".bowerrc",
+        ".editorconfig",
 
-    "gulpfile.js",
-    "gulp/.eslintrc",
-    "gulp/e2e-tests.js",
+        "gulpfile.js",
+        "gulp/.eslintrc",
+        "gulp/e2e-tests.js",
 
-    "src/favicon.ico",
-    "src/assets/images/yeoman.png"
-  ],
-  "templates": [
-    
-    "package.json",
-    
-    "gulp/conf.js",
-    "gulp/build.js",
-    "gulp/inject.js",
-    "gulp/markups.js",
-    "gulp/scripts.js",
-    "gulp/styles.js",
-    "gulp/watch.js",
-    "gulp/server.js",
-    "gulp/unit-tests.js",
+        "src/favicon.ico",
+        "src/assets/images/yeoman.png",
 
-    
-    "src/index.html"
-  ]
+
+        "gulp/build.js",
+        "gulp/inject.js",
+
+        "gulp/scripts.js",
+        "gulp/styles.js",
+        "gulp/watch.js",
+        "gulp/server.js",
+        "gulp/unit-tests.js",
+
+        "src/index.html",
+
+        "src/app/styles/index.scss",
+        "src/app/styles/vendor.scss",
+        "src/app/styles/_helper.scss",
+        "src/app/styles/_utils.scss",
+        "src/app/styles/components/_components.scss",
+        "src/app/styles/components/_navbar.scss"
+    ],
+    "templates": [
+
+        "package.json",
+        "bower.json"
+
+
+    ]
 }
