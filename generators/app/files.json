@@ -2,6 +2,13 @@
     "staticFiles": [
         ".bowerrc",
         ".editorconfig",
+        "karma.conf.js",
+
+        "protractor.conf.js",
+
+        "e2e/.eslintrc",
+        "e2e/main.spec.js",
+        "e2e/main.po.js",
 
         "gulpfile.js",
         "gulp/.eslintrc",
@@ -9,31 +16,44 @@
 
         "src/favicon.ico",
         "src/assets/images/yeoman.png",
+        "src/assets/images/angular.png",
+        "src/assets/images/browsersync.png",
+        "src/assets/images/gulp.png",
+        "src/assets/images/jasmine.png",
+        "src/assets/images/karma.png",
+        "src/assets/images/protractor.png",
+        "src/assets/images/ruby-sass.png",
 
-
+        "gulp/conf.js",
         "gulp/build.js",
         "gulp/inject.js",
-
         "gulp/scripts.js",
         "gulp/styles.js",
         "gulp/watch.js",
         "gulp/server.js",
         "gulp/unit-tests.js",
 
+        "src/app/index.module.js",
+        "src/app/index.route.js",
+        "src/app/index.config.js",
+        "src/app/index.constants.js",
+        "src/app/index.run.js",
         "src/index.html",
+        "src/app/main/main.controller.js",
+        "src/app/main/main.controller.spec.js",
+        "src/app/main/main.html",
+        "src/app/components/navbar/navbar.directive.js",
+        "src/app/components/navbar/navbar.directive.spec.js",
+        "src/app/components/navbar/navbar.html",
 
-        "src/app/styles/index.scss",
-        "src/app/styles/vendor.scss",
-        "src/app/styles/_helper.scss",
-        "src/app/styles/_utils.scss",
-        "src/app/styles/components/_components.scss",
-        "src/app/styles/components/_navbar.scss"
+        "src/app/index.scss",
+        "src/app/_helper.scss",
+        "src/app/_utils.scss",
+        "src/app/_components.scss",
+        "src/app/components/navbar/_navbar.scss"
     ],
     "templates": [
-
         "package.json",
         "bower.json"
-
-
     ]
 }
