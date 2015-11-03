@@ -21,9 +21,20 @@ var trAngularGenerator = yeoman.generators.Base.extend({
 
         //console.log('version:' + this.version);
         this.log('version:' + this.version);
+
+        var props = {};
+        //var files = [];
     }
 });
 
+require('./src/options')(trAngularGenerator);
 require('./src/prompts')(trAngularGenerator);
+require('./src/paths')(trAngularGenerator);
+require('./src/files')(trAngularGenerator);
+
+require('./src/ui.js')(trAngularGenerator);
+require('./src/preprocessors')(trAngularGenerator);
+
+require('./src/write')(trAngularGenerator);
 
 module.exports = trAngularGenerator;
