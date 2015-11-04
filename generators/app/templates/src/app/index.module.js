@@ -1,7 +1,7 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('gulpAngularBase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'toastr']);
+    angular
+      .module('gulpAngularBase', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngMessages', 'ngAria', 'ngResource', 'ui.router', 'ui.bootstrap', 'toastr']);
 
 })();

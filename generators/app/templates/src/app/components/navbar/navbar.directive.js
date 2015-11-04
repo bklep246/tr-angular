@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('gulpAngularBase')
+    .module('gulpAngularBase2')
     .directive('acmeNavbar', acmeNavbar);
 
   /** @ngInject */

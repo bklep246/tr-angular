@@ -39,18 +39,26 @@
         "src/app/index.constants.js",
         "src/app/index.run.js",
         "src/index.html",
+
         "src/app/main/main.controller.js",
         "src/app/main/main.controller.spec.js",
         "src/app/main/main.html",
+
+        "src/app/components/githubContainer/githubContainer.service.js",
+        "src/app/components/githubContainer/githubContainer.service.spec.js",
+
+        "src/app/components/webDevTec/webDevTec.service.js",
+        "src/app/components/webDevTec/webDevTec.service.spec.js",
+
         "src/app/components/navbar/navbar.directive.js",
         "src/app/components/navbar/navbar.directive.spec.js",
         "src/app/components/navbar/navbar.html",
+        "src/app/components/navbar/navbar.scss",
 
         "src/app/index.scss",
         "src/app/_helper.scss",
         "src/app/_utils.scss",
-        "src/app/_components.scss",
-        "src/app/components/navbar/_navbar.scss"
+        "src/app/_components.scss"
     ],
     "templates": [
         "package.json",

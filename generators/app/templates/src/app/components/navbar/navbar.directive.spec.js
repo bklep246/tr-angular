@@ -12,7 +12,7 @@
     var el;
     var timeInMs;
 
-    beforeEach(module('gulpAngularBase'));
+    beforeEach(module('gulpAngularBase2'));
     beforeEach(inject(function($compile, $rootScope) {
       // spyOn(_$window_, 'moment').and.callThrough();
       // $window = _$window_;
