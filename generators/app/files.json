@@ -2,8 +2,7 @@
     "staticFiles": [
         ".bowerrc",
         ".editorconfig",
-        "karma.conf.js",
-
+        
         "protractor.conf.js",
 
         "e2e/.eslintrc",
@@ -23,9 +22,12 @@
         "src/assets/images/karma.png",
         "src/assets/images/protractor.png",
         "src/assets/images/ruby-sass.png",
+        "src/assets/images/node-sass.png",
+        "src/assets/images/ui-bootstrap.png",
+        "src/assets/images/bootstrap.png",
 
         "gulp/conf.js",
-        "gulp/build.js",
+        
         "gulp/inject.js",
         "gulp/scripts.js",
         "gulp/styles.js",
@@ -33,25 +35,8 @@
         "gulp/server.js",
         "gulp/unit-tests.js",
 
-        "src/app/index.module.js",
-        "src/app/index.route.js",
-        "src/app/index.config.js",
-        "src/app/index.constants.js",
-        "src/app/index.run.js",
-        "src/index.html",
-
-        "src/app/main/main.controller.js",
-        "src/app/main/main.controller.spec.js",
         "src/app/main/main.html",
 
-        "src/app/components/githubContainer/githubContainer.service.js",
-        "src/app/components/githubContainer/githubContainer.service.spec.js",
-
-        "src/app/components/webDevTec/webDevTec.service.js",
-        "src/app/components/webDevTec/webDevTec.service.spec.js",
-
-        "src/app/components/navbar/navbar.directive.js",
-        "src/app/components/navbar/navbar.directive.spec.js",
         "src/app/components/navbar/navbar.html",
         "src/app/components/navbar/navbar.scss",
 
@@ -62,6 +47,29 @@
     ],
     "templates": [
         "package.json",
-        "bower.json"
+        "bower.json",
+
+        "karma.conf.js",
+        "gulp/build.js",
+
+        "src/app/index.module.js",
+        "src/app/index.route.js",
+        "src/app/index.config.js",
+        "src/app/index.constants.js",
+        "src/app/index.run.js",
+
+        "src/app/components/githubContributor/githubContributor.service.js",
+        "src/app/components/githubContributor/githubContributor.service.spec.js",
+
+        "src/app/components/navbar/navbar.directive.js",
+        "src/app/components/navbar/navbar.directive.spec.js",
+
+        "src/app/components/webDevTec/webDevTec.service.js",
+        "src/app/components/webDevTec/webDevTec.service.spec.js",
+
+        "src/app/main/main.controller.js",
+        "src/app/main/main.controller.spec.js",
+
+        "src/index.html"
     ]
 }

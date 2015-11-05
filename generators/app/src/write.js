@@ -76,7 +76,7 @@ module.exports = function (trAngularGenerator) {
      */
     trAngularGenerator.prototype.writeFiles = function writeFiles() {
         this.files.forEach(function (file) {
-            this.log(this.props);
+            //this.log(this.props);
             var dest = utils.replacePrefix(file.dest, this.props.paths);
             try {
                 if (file.template) {

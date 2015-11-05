@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('gulpAngularBase')
+    .module('<%- appName %>')
     .constant('moment', moment);
 
 })();

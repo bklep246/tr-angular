@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('gulpAngularBase2')
+    .module('<%- appName %>')
     .factory('githubContributor', githubContributor);
 
   /** @ngInject */

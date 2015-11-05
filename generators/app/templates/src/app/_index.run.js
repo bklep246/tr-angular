@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('gulpAngularBase')
+    .module('<%- appName %>')
     .run(runBlock);
 
   /** @ngInject */
