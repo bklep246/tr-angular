@@ -46,6 +46,7 @@
         "src/app/index.scss",
         "src/app/_helper.scss",
         "src/app/_utils.scss",
+        "src/app/_mixins.scss",
         "src/app/_components.scss"
     ],
     "templates": [
