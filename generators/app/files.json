@@ -38,7 +38,10 @@
         "src/app/main/main.html",
 
         "src/app/components/navbar/navbar.html",
-        "src/app/components/navbar/navbar.scss",
+        "src/app/components/navbar/_navbar.scss",
+
+        "src/app/components/contact/contact.html",
+        "src/app/components/contact/_contact.scss",
 
         "src/app/index.scss",
         "src/app/_helper.scss",
@@ -66,6 +69,9 @@
 
         "src/app/components/webDevTec/webDevTec.service.js",
         "src/app/components/webDevTec/webDevTec.service.spec.js",
+
+        "src/app/components/contact/contact.controller.js",
+        "src/app/components/contact/contact.controller.spec.js",
 
         "src/app/main/main.controller.js",
         "src/app/main/main.controller.spec.js",
