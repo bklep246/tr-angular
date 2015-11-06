@@ -1,9 +1,5 @@
 ﻿'use strict';
 
-var path = require('path');
-
-var s = require('underscore.string');
-
 var options = require('../options.json');
 
 module.exports = function (trAngularGenerator) {
@@ -21,13 +17,4 @@ module.exports = function (trAngularGenerator) {
             });
         }, this);
     };
-
-    /**
-     * Determine the appName either from the current directory or the parameter of the generator
-     */
-    trAngularGenerator.prototype.determineAppName = function determineAppName() {
-        this.appName = this.appName || path.basename(process.cwd());
-        this.appName = s.camelize(s.slugify(s.humanize(this.appName)));
-    };
-
 };

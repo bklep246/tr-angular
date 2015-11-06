@@ -12,14 +12,16 @@ module.exports = function (trAngularGenerator) {
             return module.module;
         });
 
-        ngModules = ngModules.concat([
-          this.props.resource.module
-          //this.props.router.module,
-          //this.props.ui.module
-        ]);
-
+        //ngModules = ngModules.concat([
+        //  //this.props.resource.module,
+        //  //this.props.router.module,
+        //  this.props.ui.module
+        //]);
+        ngModules.push('ngResource');
+        ngModules.push('ui.bootstrap');
+        ngModules.push('ui.router');
         ngModules.push('toastr');
-
+         
         this.modulesDependencies = ngModules
           .filter(_.isString)
           .map(function (dependency) {
